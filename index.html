@@ -23,8 +23,8 @@
     <div class="container-fluid">
 
       <h2>Argument Type Prediction</h2> 
-      <h3> News wire text <a href="https://eunsol.github.io/csv-to-html-table/index2.html"></h3>
-      <h3> BBN text <a href="https://eunsol.github.io/csv-to-html-table/index3.html"></h3>
+      <button id="hide">Hide mention</button> 	<button id="show">Show mention</button> 
+      <div id='table-container'></div>
       <div id='table-container'></div>
 
     </div><!-- /.container -->
@@ -45,22 +45,37 @@
     <script src="js/jquery.dataTables.min.js"></script>
     <script src="js/dataTables.bootstrap.js"></script>
     <script src='js/csv_to_html_table.js'></script>
-
+<style>
+k {color:red;}
+</style>
     <script>
-      function format_link(link){
+     $(document).ready(function(){
+    $("#hide").click(function(){
+        $("k").hide();
+    });
+    $("#show").click(function(){
+        $("k").show();
+    });
+    }); 
+     function format_link(link){
         if (link)
           return "<a href='" + link + "' target='_blank'>" + link + "</a>";
         else
           return "";
       }
-
+      function hide_possible(link){
+        if (link)
+          return "<k>" + link + "</k>";
+        else
+          return "";
+      }
       CsvToHtmlTable.init({
         csv_path: 'data/parsed_wiki_sentences_mentions_gold.csv', 
         element: 'table-container', 
         allow_download: true,
         csv_options: {separator: ',', delimiter: '"'},
         datatables_options: {"paging": false},
-	custom_formatting: [[4, format_link]]
+	custom_formatting: [[4, format_link], [3, hide_possible], [2, hide_possible]]
       });
     </script>
   </body>

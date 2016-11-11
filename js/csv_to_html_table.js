@@ -38,7 +38,7 @@ CsvToHtmlTable = {
                 csv_data[row_id][col_idx]= func(csv_data[row_id][col_idx]);
               })
             }
-
+	   
             for (col_id = 0; col_id < csv_data[row_id].length; col_id++) { 
               row_html += "<td>" + csv_data[row_id][col_id] + "</td>";
             }
