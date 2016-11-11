@@ -70,12 +70,12 @@ k {color:red;}
           return "";
       }
       CsvToHtmlTable.init({
-        csv_path: 'data/parsed_wiki_sentences_mentions_gold.csv', 
+        csv_path: 'data/wiki_mentions.csv', 
         element: 'table-container', 
         allow_download: true,
         csv_options: {separator: ',', delimiter: '"'},
         datatables_options: {"paging": false},
-	custom_formatting: [[4, format_link], [3, hide_possible], [2, hide_possible]]
+	custom_formatting: [[5, format_link], [3, hide_possible], [4, hide_possible]]
       });
     </script>
   </body>
