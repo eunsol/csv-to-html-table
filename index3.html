@@ -23,9 +23,7 @@
     <div class="container-fluid">
 
       <h2>Argument Type Prediction</h2> 
-      <h3> News wire text <a href="https://eunsol.github.io/csv-to-html-table/index2.html"></h3>
-	<button id="hide">Hide</button> 
-	<button id="hide">Show</button> 
+      <button id="hide">Hide mention</button> 	<button id="hide">Show mention</button> 
       <div id='table-container'></div>
 
     </div><!-- /.container -->
@@ -57,7 +55,7 @@ k {color:red;}
     $("#show").click(function(){
         $("k").show();
     });
-}); 
+    }); 
      function format_link(link){
         if (link)
           return "<a href='" + link + "' target='_blank'>" + link + "</a>";
