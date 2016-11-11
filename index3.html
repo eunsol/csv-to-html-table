@@ -23,7 +23,7 @@
     <div class="container-fluid">
 
       <h2>Argument Type Prediction</h2> 
-      <button id="hide">Hide mention</button> 	<button id="hide">Show mention</button> 
+      <button id="hide">Hide mention</button> 	<button id="show">Show mention</button> 
       <div id='table-container'></div>
 
     </div><!-- /.container -->
@@ -74,7 +74,7 @@ k {color:red;}
         allow_download: true,
         csv_options: {separator: ',', delimiter: '"'},
         datatables_options: {"paging": false},
-	custom_formatting: [[4, format_link], [2, hide_possible]]
+	custom_formatting: [[4, format_link], [3, hide_possible], [2, hide_possible]]
       });
     </script>
   </body>
