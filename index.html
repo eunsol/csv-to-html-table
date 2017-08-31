@@ -23,7 +23,6 @@
     <div class="container-fluid">
 
       <h2>Argument Type Prediction</h2> 
-      <button id="hide">Hide mention</button> 	<button id="show">Show mention</button> 
       <div id='table-container'></div>
       <div id='table-container'></div>
 
@@ -49,14 +48,6 @@
 k {color:red;}
 </style>
     <script>
-     $(document).ready(function(){
-    $("#hide").click(function(){
-        $("k").hide();
-    });
-    $("#show").click(function(){
-        $("k").show();
-    });
-    }); 
      function format_link(link){
         if (link)
           return "<a href='" + link + "' target='_blank'>" + link + "</a>";
@@ -74,8 +65,7 @@ k {color:red;}
         element: 'table-container', 
         allow_download: true,
         csv_options: {separator: ',', delimiter: '"'},
-        datatables_options: {"paging": false},
-	custom_formatting: [[5, format_link], [3, hide_possible], [4, hide_possible]]
+        datatables_options: {"paging": true}
       });
     </script>
   </body>
