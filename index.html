@@ -65,7 +65,9 @@ k {color:red;}
         element: 'table-container', 
         allow_download: true,
         csv_options: {separator: ',', delimiter: '"'},
-        datatables_options: {"paging": true, "lengthMenu": [ 10, 25, 50, 75, 100 ], "columnDefs":[{"width":"50%", "targets":1}]}
+        datatables_options: {"paging": true, "lengthMenu": [ 10, 25, 50, 75, 100 ], "columnDefs": [
+    { "width": "20%", "targets": 0 }
+  ]}
       });
     </script>
   </body>
