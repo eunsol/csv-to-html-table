@@ -1,4 +1,4 @@
-"Doc/Sen Id","Sentence","Mention","Mention Type","General Labels","Fine Labels","Very Fine Labels","Total Label Count"
+"Doc/Sen Id","Sentence","Mention","Mention Type","General Labels","Fine Labels","Very Fine Labels","Labels","Total Label Count"
 "10020541:0:0","Few other studies focused on <a> clades </a> within the family , but the Agamidae have not been as well investigated as the Iguanidae .","clades","common noun","event","","","event",1
 "10050404:0:1","It was just the thing to munch on last night whilst Mr. Cay and I sat around our house listening to Whitehouse and planning <a> world domination </a> .","world domination","common noun","","","power","power",1
 "102749","The Shasta cult is also an attempt at reconciling the differences between the sects of Saivites and <a> Vaishnavites </a> amongst Hindus .","Vaishnavites","named entity","","","group","group",1
