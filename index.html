@@ -47,8 +47,10 @@ k {color:red;}
         element: 'table-container', 
         allow_download: true,
         csv_options: {separator: ',', delimiter: '"'},
-        datatables_options: {"paging": true, "lengthMenu": [ 10, 25, 50, 100 ]}
-      });
+        datatables_options: {"paging": true, "lengthMenu": [ 10, 25, 50, 100 ],
+                 "columnDefs": [ { "width": "50%", "targets": 3 },
+        { "targets": [0, 1], "visible": true},
+        { "targets": '_all', "visible": true }] }});
     </script>
   </body>
 </html>
