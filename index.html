@@ -48,25 +48,13 @@
 k {color:red;}
 </style>
     <script>
-     function format_link(link){
-        if (link)
-          return "<a href='" + link + "' target='_blank'>" + link + "</a>";
-        else
-          return "";
-      }
-      function hide_possible(link){
-        if (link)
-          return "<k>" + link + "</k>";
-        else
-          return "";
-      }
       CsvToHtmlTable.init({
         csv_path: 'data/new_eval.csv', 
         element: 'table-container', 
         allow_download: true,
         csv_options: {separator: ',', delimiter: '"'},
         datatables_options: {"paging": true, "lengthMenu": [ 10, 25, 50, 75, 100 ], "columnDefs": [
-    { "width": "20%", "targets": 0 }
+    { "width": "50%", "targets": 1 }
   ]}
       });
     </script>
