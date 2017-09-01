@@ -21,22 +21,16 @@
 
   <body>
     <div class="container-fluid">
-
       <h2>Argument Type Prediction</h2> 
       <div id='table-container'></div>
-      <div id='table-container'></div>
-
     </div><!-- /.container -->
 
     <footer class='footer'>
       <div class='container-fluid'>
         <hr />
-        <p class='pull-right'><a href='https://github.com/derekeder/csv-to-html-table'>CSV to HTML Table</a> by <a href='http://derekeder.com'>Derek Eder</a></p>
+        <p class='pull-right'><a href='https://github.com/derekeder/csv-to-html-table'>CSV to HTML Table</a></p>
       </div>
     </footer>
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
@@ -53,9 +47,7 @@ k {color:red;}
         element: 'table-container', 
         allow_download: true,
         csv_options: {separator: ',', delimiter: '"'},
-        datatables_options: {"paging": true, "lengthMenu": [ 10, 25, 50, 75, 100 ], "columnDefs": [
-    { "width": "50%", "targets": 1 }
-  ]}
+        datatables_options: {"paging": true, "lengthMenu": [ 10, 25, 50, 75, 100 ], "columnDefs": [{"width": "50%", "targets": 1 }]}
       });
     </script>
   </body>
